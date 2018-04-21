@@ -1,0 +1,7 @@
+*DS_Store*
+*secret*
+*.idea
+*.iml
+node_modules
+screenshots
+old
