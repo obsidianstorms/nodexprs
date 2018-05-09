@@ -1,0 +1,22 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "./lib",
+        "target": "ES6",
+        "declaration": true,
+        "declarationDir": "typings",
+        //"noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "pretty": true,
+        "strictNullChecks": true,
+        "alwaysStrict": true
+    },
+    "include": [
+        "./src/**/*.ts"
+    ]
+}

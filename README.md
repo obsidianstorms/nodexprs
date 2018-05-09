@@ -12,6 +12,10 @@
 ### IntelliJ Config
 * Preferences > Language & Frameworks > Javascript > Language Version: EMCAScript 6
 
+### Docker Permissions
+* Possible error during `make build`: `Got permission denied while trying to connect to the Docker daemon socket`
+* Fix: In a terminal: `sudo usermod -a -G docker $USER`
+
 ## <a name="secret"></a>Secrets
 * Fill in `config/secrets.json` with any credentials needed for target sites
     * Update `src/run.js` as needed

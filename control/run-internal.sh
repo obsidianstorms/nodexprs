@@ -16,12 +16,9 @@ trap control_c SIGINT
 ####################################
 # RUN TESTS
 ####################################
-#RUN_SCRIPT="/repo/src/run.js"
+RUN_SCRIPT="/repo/server.js"
 
 # All Tests
-#node ${RUN_SCRIPT}
-node "/repo/src/bdr.js"
-node "/repo/src/pp.js"
-node "/repo/src/rb.js"
+node ${RUN_SCRIPT}
 CODE=$?
 exit $CODE

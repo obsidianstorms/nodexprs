@@ -11,6 +11,6 @@ NC="\033[0m"
 # Environment
 ####################################
 cd /repo
-npm install
+sudo npm install
 CODE=$?
-exit $CODE
+exit ${CODE}

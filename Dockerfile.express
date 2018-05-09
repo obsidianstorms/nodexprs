@@ -16,3 +16,14 @@ apt-get install -y sudo curl wget unzip git
 #    && npm install body-parser --save \
 #    && npm install cookie-parser --save \
 #    && npm install multer --save
+
+# package.json
+#npm WARN deprecated yarn@0.27.5: It is recommended to install Yarn using the native installation method for your environment. See https://yarnpkg.com/en/docs/install
+#npm WARN deprecated formatio@1.2.0: This package is unmaintained. Use @sinonjs/formatio instead
+#npm WARN deprecated mailparser@0.4.9: This project is unmaintained
+#npm WARN deprecated mimelib@0.3.1: This project is unmaintained
+
+#    "mail-notifier": "^0.4.1",
+#    "sinon": "^2.4.1",
+#    "@types/sinon": "^2.3.3",
+#    "@sinonjs/formatio": "^2.0.0",

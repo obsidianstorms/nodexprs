@@ -92,6 +92,7 @@ fi
 # Build docker
 SUCCESSFUL_BUILD=0
 DOCKER_FILE="Dockerfile.express"
+CONTROL_INIT="/repo/control/init-internal.sh"
 DOCKER_NAME=$1
 HOST_REPO="$(pwd)"
 DOCKER_FILEPATH="${HOST_REPO}/${DOCKER_FILE}"
@@ -102,7 +103,7 @@ docker build -t ${DOCKER_NAME} -f ${DOCKER_FILEPATH} .
 # This process avoids the host from needing to be configured with node
 docker run -t -i \
         -v "$HOST_REPO:/repo" \
-        $DOCKER_NAME /bin/bash /repo/init-internal.sh
+        ${DOCKER_NAME} /bin/bash ${CONTROL_INIT}
 CODE=$?
 if [ ${CODE} -ne 0 ]; then
     printf "${ERROR_COLOR} FATAL: Docker or internal initialization build failed with code: ${CODE}. ${NC}\n"
